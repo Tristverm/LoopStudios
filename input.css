@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind variants;
 @tailwind utilities;
+
+
+
+
+#hero {
+    @apply bg-[url("../images/desktop/image-hero.jpg")] bg-no-repeat bg-cover
+}
