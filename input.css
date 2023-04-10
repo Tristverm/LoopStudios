@@ -1,14 +1,19 @@
-@tailwwind base;
+@tailwind base;
 @tailwind components;
-@tailwind variants;
 @tailwind utilities;
 
+
 #hero {
-  @apply bg-[url("../images/desktop/image-hero.jpg")] bg-no-repeat bg-cover;
+  /* background-image: url('../images/desktop/image-hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+  @apply bg-[url("../images/desktop/image-hero.jpg")] bg-no-repeat bg-cover
 }
 
 @media (max-width: 576px) {
   #hero {
-    @apply bg-[url("../images/desktop/image-hero.jpg")] bg-no-repeat bg-center;
+    @apply bg-[url("../images/desktop/image-hero.jpg")] bg-center bg-no-repeat
+    /* background-position: center; */
+
   }
-} ;
+}
