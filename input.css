@@ -3,9 +3,12 @@
 @tailwind variants;
 @tailwind utilities;
 
-
-
-
 #hero {
-    @apply bg-[url("../images/desktop/image-hero.jpg")] bg-no-repeat bg-cover
+  @apply bg-[url("../images/desktop/image-hero.jpg")] bg-no-repeat bg-cover;
 }
+
+@media (max-width: 576px) {
+  #hero {
+    @apply bg-[url("../images/desktop/image-hero.jpg")] bg-no-repeat bg-center;
+  }
+} ;
